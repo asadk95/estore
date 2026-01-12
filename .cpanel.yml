@@ -1,0 +1,20 @@
+---
+deployment:
+  tasks:
+    # Deploy frontend (dist folder) to website root
+    - export DEPLOYPATH=/home/webhostbazaar/public_html/shop
+    - /bin/cp -R dist/* $DEPLOYPATH/
+    
+    # Deploy backend to api folder
+    - /bin/mkdir -p $DEPLOYPATH/api
+    - /bin/cp -R backend/server.js $DEPLOYPATH/api/
+    - /bin/cp -R backend/package.json $DEPLOYPATH/api/
+    - /bin/cp -R backend/package-lock.json $DEPLOYPATH/api/
+    - /bin/cp -R backend/routes $DEPLOYPATH/api/
+    - /bin/cp -R backend/config $DEPLOYPATH/api/
+    - /bin/cp -R backend/middleware $DEPLOYPATH/api/
+    - /bin/cp -R backend/database $DEPLOYPATH/api/
+    
+    # Restart Node.js (touch tmp/restart.txt)
+    - /bin/mkdir -p $DEPLOYPATH/api/tmp
+    - /bin/touch $DEPLOYPATH/api/tmp/restart.txt
