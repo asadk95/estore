@@ -1,0 +1,198 @@
+/* ================================
+   DEALS PAGE STYLES
+================================ */
+
+.deals-page {
+  padding: var(--space-8) 0 var(--space-16);
+}
+
+/* Flash Sale Banner */
+.flash-sale-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-6) var(--space-8);
+  background: linear-gradient(135deg, var(--accent-500), var(--accent-600));
+  border-radius: var(--radius-2xl);
+  color: white;
+  margin-bottom: var(--space-12);
+}
+
+.flash-sale-content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.flash-sale-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-xl);
+  font-size: var(--text-2xl);
+}
+
+.flash-sale-text h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+}
+
+.flash-sale-text p {
+  opacity: 0.9;
+}
+
+.flash-sale-timer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.flash-sale-timer>svg {
+  font-size: var(--text-xl);
+  margin-right: var(--space-2);
+}
+
+.timer-block {
+  text-align: center;
+}
+
+.timer-value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-lg);
+}
+
+.timer-label {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.timer-separator {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+}
+
+/* Deals Section */
+.deals-section {
+  margin-bottom: var(--space-16);
+}
+
+.deals-title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  margin-bottom: var(--space-8);
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+/* Special Offers */
+.special-offers h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  margin-bottom: var(--space-6);
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.offer-card {
+  position: relative;
+  padding: var(--space-10);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.offer-card--electronics {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+}
+
+.offer-card--fashion {
+  background: linear-gradient(135deg, #9333ea, #ec4899);
+  color: white;
+}
+
+.offer-content {
+  position: relative;
+  z-index: 1;
+}
+
+.offer-tag {
+  display: inline-block;
+  padding: var(--space-1) var(--space-3);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  margin-bottom: var(--space-3);
+}
+
+.offer-card h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  margin-bottom: var(--space-2);
+}
+
+.offer-card p {
+  opacity: 0.9;
+  margin-bottom: var(--space-4);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .deals-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .flash-sale-banner {
+    flex-direction: column;
+    gap: var(--space-6);
+    text-align: center;
+  }
+
+  .flash-sale-content {
+    flex-direction: column;
+  }
+
+  .deals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .deals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timer-value {
+    font-size: var(--text-xl);
+  }
+}

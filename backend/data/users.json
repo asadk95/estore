@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Test User",
+    "email": "test@example.com",
+    "phone": "0300-1234567",
+    "password": "$2b$10$9LBN/l2uOKFWf2lTdVxZCeZ3jZ.9KdSfXF.oeGWtjwoCjpQeomabO",
+    "role": "customer",
+    "createdAt": "2026-01-11T15:37:15.555Z"
+  },
+  {
+    "id": 2,
+    "name": "Admin",
+    "email": "admin@estore.pk",
+    "phone": "0300-0000000",
+    "password": "$2b$10$SYBe28JfpbdwvMbsvUNSQ.5v0HPatlUJC1r9ARktYpJFYklibZkry",
+    "role": "admin",
+    "status": "active",
+    "createdAt": "2026-01-11T16:26:00.313Z"
+  },
+  {
+    "id": 3,
+    "name": "Muhammad Asad",
+    "email": "masadmianwali@gmail.com",
+    "phone": "03125845663",
+    "password": "$2b$10$PxAiW401vlRDhFXCtiNbHu1nYwpCeuinSM1akPBUwziwsDi3C1Xn2",
+    "role": "customer",
+    "createdAt": "2026-01-11T16:53:49.070Z"
+  }
+]

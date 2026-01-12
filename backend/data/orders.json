@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "orderId": "ORD-1768147761820",
+    "userId": 1,
+    "items": [
+      {
+        "productId": 2,
+        "name": "Smart Watch Fitness Tracker",
+        "price": 7500,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400"
+      }
+    ],
+    "shippingAddress": {
+      "name": "Test User",
+      "phone": "0300-1234567",
+      "address": "hikjhn",
+      "city": "Other",
+      "postalCode": ""
+    },
+    "paymentMethod": "cod",
+    "paymentDetails": {
+      "name": "Cash on Delivery",
+      "processingFee": 0
+    },
+    "subtotal": 7500,
+    "shipping": 0,
+    "processingFee": 0,
+    "total": 7500,
+    "status": "cancelled",
+    "paymentStatus": "pending",
+    "notes": "",
+    "timeline": [
+      {
+        "status": "pending",
+        "timestamp": "2026-01-11T16:09:21.820Z",
+        "note": "Order placed"
+      },
+      {
+        "status": "cancelled",
+        "timestamp": "2026-01-11T16:51:12.167Z",
+        "note": "Status changed to cancelled"
+      }
+    ],
+    "createdAt": "2026-01-11T16:09:21.820Z",
+    "updatedAt": "2026-01-11T16:51:12.167Z"
+  }
+]
