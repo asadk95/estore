@@ -2,7 +2,7 @@
 deployment:
   tasks:
     # Deploy frontend (dist folder) to website root
-    - export DEPLOYPATH=/home/webhostbazaar/public_html/shop
+    - export DEPLOYPATH=/home/webhostbazaar/shop.buyinn.pk
     - /bin/cp -R dist/* $DEPLOYPATH/
     
     # Deploy backend to api folder
