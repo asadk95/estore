@@ -4,10 +4,27 @@ description: How to deploy E-Store updates to cPanel (shop.buyinn.pk)
 
 # 🚀 E-Store Deployment Workflow
 
+// turbo-all
+
+## Quick Deploy (3 Steps)
+
+```powershell
+# 1. Build & Commit
+npm run build
+git add .
+git commit -m "Your update message"
+git push
+```
+
+Then in cPanel:
+- Git Version Control → Manage estore → Pull or Deploy
+- Click "Update from Remote" → "Deploy HEAD Commit"
+
+---
+
 ## Prerequisites
-- Access to cPanel at buyinn.pk
-- Git installed locally
-- FTP credentials (for Option B)
+- GitHub repo: https://github.com/asadk95/estore
+- cPanel Git configured to clone from GitHub
 
 ---
 
