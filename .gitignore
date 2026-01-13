@@ -29,6 +29,12 @@ dist.zip
 backend.zip
 backend_temp
 
+# Local documentation (not pushed to GitHub)
+GIT_CHEATSHEET.md
+GIT_CPANEL_SETUP.md
+deploy.ps1
+.agent/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
