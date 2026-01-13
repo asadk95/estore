@@ -126,8 +126,9 @@ const ProductsAdmin = () => {
         throw new Error(data.error || 'Upload failed');
       }
 
-      // Set the full URL for the image
-      const imageUrl = `http://localhost:5000${data.file.url}`;
+      // Use relative URL - works in both local and production
+      // The browser/frontend will resolve it relative to current domain
+      const imageUrl = data.file.url; // e.g., /uploads/filename.jpg
       setForm({ ...form, image: imageUrl });
       setImagePreview(imageUrl);
       toast.success('Image uploaded!');
