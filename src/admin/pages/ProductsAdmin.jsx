@@ -341,14 +341,14 @@ const ProductsAdmin = () => {
                 <div className="image-url-fallback">
                   <span>Or paste image URL:</span>
                   <input
-                    type="url"
+                    type="text"
                     value={form.image}
                     onChange={(e) => {
                       setForm({ ...form, image: e.target.value });
                       setImagePreview(e.target.value);
                     }}
                     className="form-input"
-                    placeholder="https://..."
+                    placeholder="/uploads/... or https://..."
                   />
                 </div>
               </div>
